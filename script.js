@@ -1,5 +1,12 @@
 function minDate(dates) {
   //write you code here
+	let newDate=dates[0];
+	let newDates1=dates.map(function(e){
+		if(newDate>e){
+			newDate=e;
+		}
+	});
+	return newDate;
 }
 
 // Do not change the code
@@ -38,3 +45,6 @@ var dates = [
 ];
 
 alert(minDate(dates));
+
+
+
